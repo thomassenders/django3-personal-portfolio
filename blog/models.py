@@ -1,7 +1,8 @@
 from django.db import models
-from datetime import date
+from django.utils import timezone
 
-today = django.utils.timezone.now
+today = timezone.now()
+
 
 class Blog(models.Model):
     title = models.CharField(max_length=200)
